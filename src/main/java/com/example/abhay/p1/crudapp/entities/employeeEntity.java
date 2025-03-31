@@ -1,5 +1,6 @@
 package com.example.abhay.p1.crudapp.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,6 +23,7 @@ public class employeeEntity {
     private Integer age;
     private String email;
     private LocalDate dateOfJoin;
+    @JsonProperty("isActive")
     private Boolean isActive;
 
 }
